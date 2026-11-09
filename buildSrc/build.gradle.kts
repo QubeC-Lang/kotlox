@@ -1,0 +1,17 @@
+plugins {
+    `kotlin-dsl`
+}
+
+repositories {
+    gradlePluginPortal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:${libs.versions.kotlin.get()}")
+    implementation("io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${libs.versions.detekt.get()}")
+    implementation("com.adarshr:gradle-test-logger-plugin:${libs.versions.testLogger.get()}")
+    implementation("com.github.ben-manes:gradle-versions-plugin:${libs.versions.versionsPlugin.get()}")
+    implementation("se.ascp.gradle:gradle-versions-filter:${libs.versions.versionsFilterPlugin.get()}")
+    implementation("nl.littlerobots.vcu:plugin:${libs.versions.versionCatalogUpdate.get()}")
+}

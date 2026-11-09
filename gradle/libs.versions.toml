@@ -1,0 +1,18 @@
+[versions]
+detekt = "1.23.8"
+kotlin = "2.4.0"
+testLogger = "4.0.0"
+versionCatalogUpdate = "1.1.0"
+versionsFilterPlugin = "0.1.16"
+versionsPlugin = "0.54.0"
+
+[plugins]
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+testLogger = { id = "com.adarshr.test-logger", version.ref = "testLogger" }
+versionCatalogUpdate = { id = "nl.littlerobots.version-catalog-update", version.ref = "versionCatalogUpdate" }
+versionsFilterPlugin = { id = "se.ascp.gradle.gradle-versions-filter", version.ref = "versionsFilterPlugin" }
+versionsPlugin = { id = "com.github.ben-manes.versions", version.ref = "versionsPlugin" }
+
+[libraries]
+detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
