@@ -8,10 +8,10 @@ reduced to JVM-only and without publishing.
 
 ## Modules
 
-| Module          | Path            | Description                                                      |
-|-----------------|-----------------|------------------------------------------------------------------|
-| `:core`         | `core/`         | The library (explicit API mode).                                 |
-| `:repl`         | `examples/repl` | Example app: REPL, or runs a script file, printing scanned tokens. |
+| Module  | Path            | Description                                                        |
+|---------|-----------------|--------------------------------------------------------------------|
+| `:core` | `core/`         | The library (explicit API mode).                                   |
+| `:repl` | `examples/repl` | Example app: REPL, or runs a script file, printing scanned tokens. |
 
 ## Usage
 
