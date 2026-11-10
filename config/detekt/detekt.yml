@@ -6,3 +6,16 @@ build:
     # LongParameterList: 1
     # style: 1
     # comments: 1
+
+complexity:
+  TooManyFunctions:
+    thresholdInClasses: 20
+
+style:
+  ReturnCount:
+    excludeGuardClauses: true
+
+formatting:
+  CommentSpacing:
+    # Allows the `//>` and `//<` section markers.
+    active: false

@@ -11,13 +11,14 @@ reduced to JVM-only and without publishing.
 | Module          | Path            | Description                                                      |
 |-----------------|-----------------|------------------------------------------------------------------|
 | `:core`         | `core/`         | The library (explicit API mode).                                 |
-| `:repl`         | `examples/repl` | Example app using the library.                                   |
+| `:repl`         | `examples/repl` | Example app: REPL, or runs a script file, printing scanned tokens. |
 
 ## Usage
 
 ```sh
 ./gradlew build                          # compile, test, detekt, kover coverage reports
-./gradlew :repl:run -q --console=plain   # run the example
+./gradlew :repl:run -q --console=plain   # interactive prompt
+./gradlew :repl:run --args="script.lox"  # run a file
 ./gradlew versionCatalogUpdate           # update gradle/libs.versions.toml
 ```
 
