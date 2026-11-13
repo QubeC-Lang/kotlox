@@ -17,6 +17,10 @@ dependencyResolutionManagement {
 include(":core")
 include(":repl")
 project(":repl").projectDir = file("examples/repl")
+include(":ast-printer")
+project(":ast-printer").projectDir = file("examples/ast-printer")
+include(":generate-ast")
+project(":generate-ast").projectDir = file("tools/generate-ast")
 
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
